@@ -4,6 +4,9 @@ import theme from '../../styles/theme';
 
 export const Container = styled.div`
   width: 100vw;
+  min-width: 300px;
+  max-width: 1366px;
+  min-height: 100vh; 
   padding: 2.8rem;
 
   display: grid;  
