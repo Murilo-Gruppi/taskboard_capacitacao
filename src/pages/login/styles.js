@@ -10,6 +10,22 @@ export const Container = styled.div`
   grid-template-columns: 34% 66%;
   align-items: center;
   justify-content: center;
+
+  @media (max-width: 1280px) {
+    grid-template-columns: 36% 64%;
+  }
+
+  @media (max-width: 1080px) {
+    grid-template-columns: 46% 54%;
+  }
+  
+  @media (max-width: 980px) {
+    grid-template-columns: 64% 36%;
+  }
+
+  @media (max-width: 800px) {
+    grid-template-columns: 1fr;
+  }
 `;
 
 export const LoginSection = styled.section`
@@ -23,6 +39,26 @@ export const LoginSection = styled.section`
 
   gap: 2.4rem;
   background-color: ${theme.colors.white};
+
+  @media (max-width: 1280px) {
+    padding-right: 5.4rem;
+    padding-left: 5.4rem;
+  }
+
+  @media (max-width: 880px) {
+    padding-right: 4.8rem;
+    padding-left: 4.8rem;
+  }
+
+  @media (max-width: 800px) {
+    border-radius: 3.2rem;
+  }
+
+  @media (max-width: 430px) {
+    padding-left: 3.2rem;
+    padding-right: 3.2rem;
+    gap: 1.8rem;
+  }
 `;
 
 export const Center = styled.div`
@@ -70,4 +106,8 @@ export const DecorativeSection = styled.section`
   justify-content: center;
 
   background-color: ${theme.colors.blue[500]};
+
+  @media (max-width: 800px) {
+    display: none;
+  }
 `;
